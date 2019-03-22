@@ -1,0 +1,9 @@
+<h1 class="title"><strong><%= @animal.common_name %></strong></h1>
+<h3 class="title is-3">Latin Name:<%= @animal.latin_name %></h3>
+<h3 class="title is-3">Kingdom:<%= @animal.kingdom %></h3>
+<h3 class="title is-3">Sightings:<%= render @animal.sightings %></h3>
+
+<%= link_to "Create Animal Sighting", new_animal_sighting_path(@animal), class: "button is-success" %>
+
+<%= link_to "Update", edit_animal_sighting_path(@sighting), class: "button is-success" %>
+

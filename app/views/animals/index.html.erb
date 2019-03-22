@@ -1,0 +1,15 @@
+<h1 class='title'>Animals</h1>
+
+    <% @animals.each do |animal| %>
+        <p><strong>Name:<%= animal.common_name %></p></stong>
+        <p><strong>Latin:<%= animal.latin_name %></p><strong>
+        <p><strong>Kingdom:<%= animal.kingdom %></p></strong>
+
+    
+    <%= link_to "Create New Animal", new_animal_path, class: "button is-success" %>
+    <%= link_to "Edit Animal", edit_animal_path(animal), class: "button is-success" %>
+    <%= link_to "Delete Animal", animal, method: :delete, data: {confirm: "Are you sure?"}, class: "button is-success" %>
+    
+
+    
+    <% end %>

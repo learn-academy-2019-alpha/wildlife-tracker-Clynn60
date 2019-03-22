@@ -1,0 +1,15 @@
+<h1>Delete Animal</h1>
+
+<%= form_for @animal do |f| %>
+<%= f.label :common_name %>
+<%= f.text_field :common_name %><br/>
+
+<%= f.label :latin_name %>
+<%= f.text_field :latin_name %><br/>
+
+<%= f.label :kingdom %>
+<%= f.text_field :kingdom %><br/>
+
+<%= f.submit "Submit" %>
+
+<% end %>
